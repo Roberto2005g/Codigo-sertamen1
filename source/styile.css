@@ -198,3 +198,72 @@
     border-bottom: none;
     margin-bottom: 0;
 }
+
+/* --- COMMIT 3: SECCIÓN HABILIDADES --- */
+.habilidades {
+    padding: 5rem 10%;
+    background-color: #ffffff;
+}
+
+.habilidades-contenido {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+.tabla-contenedor {
+    flex: 1.5;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead {
+    background-color: #ac0b0b;
+    color: white;
+    text-align: left;
+}
+/* Aplica estilos a los <th> dentro de table*/
+table th, table td {
+    padding: 1.2rem;
+    border-bottom: 1px solid #eee;
+    width: 50%; /* Esto hace que las 2 columnas midan lo mismo */
+}
+
+table tbody tr:hover {
+    background-color: #b4c4d3;
+    transition: background 0.5s;
+}
+
+.listas-contenedor {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.lista-grupo h3 {
+    color: #ac0b0b;
+    margin-bottom: 1rem;
+    border-left: 4px solid #a600ff; 
+    padding-left: 10px;
+}
+
+.lista-grupo ul, .lista-grupo ol {
+    padding-left: 1.2rem;
+    line-height: 1.8;
+}
+
+.lista-grupo ul li {
+    list-style-type: square;
+}
+
+.lista-grupo ol li {
+    font-weight: bold;
+    color: #2446f2; 
+}
