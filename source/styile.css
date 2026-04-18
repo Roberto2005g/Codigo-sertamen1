@@ -267,3 +267,91 @@ table tbody tr:hover {
     font-weight: bold;
     color: #2446f2; 
 }
+
+/* --- COMMIT 4: GALERÍA DE PROYECTOS (CSS GRID) --- */
+.proyectos {
+    padding: 5rem 10%;
+    background-color: #fcf8fb;
+}
+
+/* El uso de CSS Grid */
+.galeria-grid {
+    display: grid;
+    /* Crea columnas automáticas que no sean menores a 300px */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.proyecto-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 4px solid #a600ff; 
+}
+
+/* Efecto al pasar el mouse */
+.proyecto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.proyecto-card figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Para que mi plantillas tengan la misma altura */
+}
+
+.proyecto-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.proyecto-card figcaption {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Empuja el enlace hacia abajo si el texto es corto */
+    gap: 0.8rem;
+}
+
+.proyecto-categoria {
+    font-size: 0.8rem;
+    color: #64748b;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.proyecto-card h3 {
+    color: #ac0b0b; 
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.proyecto-card p {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.link-repositorio {
+    color: #2446f2; 
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    margin-top: auto; /* Mantiene el enlace siempre abajo */
+    transition: color 0.3s;
+}
+
+.link-repositorio:hover {
+    color: #ac0b0b;
+    text-decoration: underline;
+}
