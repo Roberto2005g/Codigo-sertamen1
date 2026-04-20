@@ -534,3 +534,74 @@ table tbody tr:hover {
     font-size: 0.85rem;
     opacity: 0.8;
 }
+
+/* --- COMMIT 8: RESPONSIVE DESIGN (Media Queries) --- */
+
+/* Pantallas tamaño Tablet (máximo 768px) */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 3rem;
+    }
+    
+    .hero-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    /* Rompemos el Flexbox para que queden uno abajo del otro */
+    .sobre-mi-contenedor, 
+    .habilidades-contenido, 
+    .contacto-contenedor {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    /* Hacemos que los contenedores ocupen el ancho disponible */
+    .sobre-mi-texto, .datos-personales, 
+    .tabla-contenedor, .listas-contenedor, 
+    .formulario, .info-contacto {
+        flex: none;
+        width: 100%;
+    }
+
+    /* El formulario doble pasa a ser de una sola columna */
+    .form-grupo-doble {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+/* Pantallas tamaño celular (máximo 480px) */
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .seccion-header h2 {
+        font-size: 2rem;
+    }
+
+    /* Ajuste para que la tabla no se salga de la pantalla en el celular */
+    .tabla-contenedor {
+        overflow-x: auto;
+    }
+
+    .footer-contenido {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}
