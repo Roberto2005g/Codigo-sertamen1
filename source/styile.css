@@ -4,7 +4,10 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
+/* --- COMMIT 7: Mejoras visuales --- */
+html {
+    scroll-behavior: smooth; /* Hace que al hacer clic en el navbar, la página baje de manera suave */
+}
 
 .header {
     background-color: #ac0b0b; 
