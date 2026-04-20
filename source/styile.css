@@ -268,7 +268,7 @@ table tbody tr:hover {
     color: #2446f2; 
 }
 
-/* --- COMMIT 4: GALERÍA DE PROYECTOS (CSS GRID) --- */
+/* --- COMMIT 4: SECCIÓN PROYECTOS (CSS GRID) --- */
 .proyectos {
     padding: 5rem 10%;
     background-color: #fcf8fb;
@@ -354,4 +354,122 @@ table tbody tr:hover {
 .link-repositorio:hover {
     color: #ac0b0b;
     text-decoration: underline;
+}
+
+/* --- COMMIT 5: SECCIÓN CONTACTO --- */
+.contacto {
+    padding: 5rem 10%;
+    background-color: #ffffff;
+}
+
+.contacto-contenedor {
+    display: flex;
+    gap: 4rem;
+    align-items: flex-start;
+}
+
+/* Estilos del Formulario */
+.formulario {
+    flex: 2;
+    background-color: #f8fafc;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.form-grupo-doble {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.form-grupo-doble .form-grupo {
+    flex: 1;
+}
+
+.form-grupo {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-grupo label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #1c3659;
+    font-size: 0.9rem;
+}
+
+/* Campos del formulario */
+.form-grupo input, 
+.form-grupo select, 
+.form-grupo textarea {
+    padding: 0.8rem 1rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+
+/* Estado FOCUS (evaluado en la rúbrica) */
+.form-grupo input:focus, 
+.form-grupo select:focus, 
+.form-grupo textarea:focus {
+    outline: none;
+    border-color: #2446f2; 
+    box-shadow: 0 0 0 3px rgba(36, 70, 242, 0.2);
+}
+
+.boton-enviar {
+    background-color: #ac0b0b; 
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.boton-enviar:hover {
+    background-color: #7a0808; 
+}
+
+/* Información de Contacto (Aside) */
+.info-contacto {
+    flex: 1;
+    background-color: #f8fafc;
+    padding: 2.5rem;
+    border-radius: 12px;
+    border-left: 5px solid #a600ff; 
+}
+
+.info-contacto h3 {
+    color: #ac0b0b;
+    margin-bottom: 1.5rem;
+}
+
+.info-contacto ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.info-contacto li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #475569;
+    font-weight: 500;
+}
+
+.icono {
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
