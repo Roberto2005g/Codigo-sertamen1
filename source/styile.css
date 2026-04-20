@@ -473,3 +473,61 @@ table tbody tr:hover {
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+/* --- COMMIT 6: FOOTER --- */
+
+.footer {
+    background-color: #ac0b0b; 
+    color: white;
+    padding: 3rem 10% 1rem 10%;
+}
+
+.footer-contenido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding-bottom: 2rem;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-imagen {
+   width: 50px;
+   height: 50px;
+   border-radius: 4px;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 1rem;
+}
+
+.redes-sociales a {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.redes-sociales a:hover {
+    background-color: #a600ff; /* Morado al pasar el ratón */
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
