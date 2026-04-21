@@ -454,6 +454,20 @@ table tbody tr:hover {
     color: #ac0b0b;
     margin-bottom: 1.5rem;
 }
+/* --- COMMIT 9: Mejora visual  --- */
+
+/* El estilO enlace de GitHub */
+.enlace-limpio {
+    text-decoration: none; 
+    color: #555555; 
+    font-weight: bold; 
+    transition: color 0.3s ease; 
+}
+
+/* Efecto al pasar el ratón por encima (Hover) */
+.enlace-limpio:hover {
+    color: #347cdb; 
+}
 
 .info-contacto ul {
     list-style: none;
